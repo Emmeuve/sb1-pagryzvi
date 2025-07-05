@@ -16,6 +16,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import Aurora from './Aurora';
+import GridMotion from './components/GridMotion';
 
 function App() {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
@@ -103,14 +104,14 @@ function App() {
               onMouseEnter={() => setHoveredCard('about')}
               onMouseLeave={() => setHoveredCard(null)}
             >
-              <h3 className="text-xl font-bold text-slate-800 mb-4">About Me</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-4">Acerca de mi</h3>
               <p className="text-slate-600 mb-4 leading-relaxed">
                 5+ years of experience building scalable web applications. Passionate about clean code and user experience.
               </p>
               <div className="flex items-center gap-4 text-sm text-slate-500">
                 <div className="flex items-center gap-1">
                   <MapPin className="w-4 h-4" />
-                  San Francisco, CA
+                  Stgo, Chile
                 </div>
                 <div className="flex items-center gap-1">
                   <Coffee className="w-4 h-4" />
